@@ -57,7 +57,7 @@ if __name__ == '__main__':
     Model = get_model(args.model_type)
     model = Model(config.classes_num, config.seq_len, config.mel_bins, cuda)
     if cuda and torch.cuda.device_count() > 1 and data_parallel:
-        print(f'Using {torch.cuda.device_count()} GPUs!')
+        logging.info(f'Using {torch.cuda.device_count()} GPUs!')
         model = nn.DataParallel(model)
     if cuda:
         model = model.cuda()
@@ -69,6 +69,7 @@ if __name__ == '__main__':
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'max', patience = 3, verbose = True)
 
     logging.info('-------------------------------------------------------')
+    best_micro_val = 0.0
     for e in range(args.epochs):
         s = time.time()
 
