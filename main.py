@@ -14,7 +14,7 @@ if __name__ == '__main__':
     """
     Example usage:
 
-    python3 main.py -data_dir data -exp_name test -batch_size 24 -epochs 80 -lr 1e-3 -clip_value 0.0 \
+    python3 main.py -data_dir data -exp_name test -batch_size 24 -epochs 80 -lr 1e-3 \
         -num_workers 64 -data_parallel 1 -model_type MTL_SEDNetwork -val_fold 4 -snr 20 -alpha 0.001
     """
     parser = argparse.ArgumentParser()

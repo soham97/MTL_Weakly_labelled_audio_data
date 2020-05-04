@@ -11,7 +11,7 @@ class audio_dataset(Dataset):
         # Load h5 data
         hf = h5py.File(self.data_path, 'r')
         fold = np.array(hf['fold'])
-        self.foldidx = np.argwhere(fold != self.val_fold).reshape(-1) if train else np.argwhere(fold == valfold).reshape(-1)
+        self.foldidx = np.argwhere(fold != self.val_fold).reshape(-1) if train else np.argwhere(fold == val_fold).reshape(-1)
         self.foldidxlist = self.foldidx.tolist()
         self.audio_names = np.array([s.decode() for s in hf['audio_name'][self.foldidxlist]])
         self.x = hf['mixture_logmel'][self.foldidxlist]
