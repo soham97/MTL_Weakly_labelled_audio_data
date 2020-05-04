@@ -37,7 +37,7 @@ if __name__ == '__main__':
         print('Only support visualisation for MTL_SEDNetwork')
         exit()
     cuda = torch.cuda.is_available() 
-    create_folder('visulations')
+    create_folder('visualisations')
     base_path = os.path.join('visulations', args.exp_name)
     create_logging(base_path, filemode = 'w')
     logging.info(f'logging started for visualisation experiment = {args.exp_name}')
