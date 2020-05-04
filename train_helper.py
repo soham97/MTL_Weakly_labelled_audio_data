@@ -2,6 +2,7 @@ import os
 from dataset import audio_dataset
 from torch.utils.data import DataLoader
 from utils import reconstruction_plot, attention_plot, create_folder
+import tqdm
 
 def get_dataloader(data_path, yaml_path, args, cuda):
     train_dataset = audio_dataset(data_path, yaml_path, args.val_fold, train = True)
@@ -65,7 +66,7 @@ def visualise_epoch(data_container, model, args, cuda, base_path):
 
     model.eval()
     i = 0
-    for x, _, audio_names in data_container['val_dataloader']:
+    for x, _, audio_names in tqdm(data_container['val_dataloader']):
         if cuda:
             x = x.cuda()
         out_dict = model(x)

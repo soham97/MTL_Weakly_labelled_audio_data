@@ -26,7 +26,6 @@ if __name__ == '__main__':
     parser.add_argument("-batch_size", "--batch_size", type=int, default=24, help="Batch size for training")
     parser.add_argument("-num_workers", "--num_workers", type=int, default=64, help = "Number of workers to be used")
     parser.add_argument("-data_parallel", "--data_parallel", type = int, help="1 if model is to be distributed across multiple GPUs")
-    parser.add_argument("-model_type", "--model_type", type = str, choices=["MTL_SEDNetwork","GMP", "GAP", "GWRP", "AttrousCNN_2DAttention"])
     parser.add_argument("-snr", "--snr", required=True, type=int, help="SNR between 0, 10, 20")
     parser.add_argument("-pretrained_model_path", "--pretrained_model_path", required = True, type=str, help="path of model to use for generating visualations")
     args = parser.parse_args()
