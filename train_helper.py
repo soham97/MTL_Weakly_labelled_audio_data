@@ -2,7 +2,7 @@ import os
 from dataset import audio_dataset
 from torch.utils.data import DataLoader
 from utils import reconstruction_plot, attention_plot, create_folder
-import tqdm
+from tqdm import tqdm
 
 def get_dataloader(data_path, yaml_path, args, cuda):
     train_dataset = audio_dataset(data_path, yaml_path, args.val_fold, train = True)
