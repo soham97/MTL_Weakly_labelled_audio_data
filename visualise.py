@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     python3 main.py -data_dir data -exp_name dual_attn_vis -batch_size 24 \
         -num_workers 64 -data_parallel 1 -model_type MTL_SEDNetwork -snr 20 \
-        -pretrained_model_path test/best.pth
+        -pretrained_model_path test/best.pth -val_fold 4
     
     """
     parser = argparse.ArgumentParser()
@@ -27,6 +27,7 @@ if __name__ == '__main__':
     parser.add_argument("-num_workers", "--num_workers", type=int, default=64, help = "Number of workers to be used")
     parser.add_argument("-data_parallel", "--data_parallel", type = int, help="1 if model is to be distributed across multiple GPUs")
     parser.add_argument("-snr", "--snr", required=True, type=int, help="SNR between 0, 10, 20")
+    parser.add_argument("-val_fold", "--val_fold", required=True, type=int, help="holdout fold between 1,2,3,4")
     parser.add_argument("-pretrained_model_path", "--pretrained_model_path", required = True, type=str, help="path of model to use for generating visualations")
     args = parser.parse_args()
 
