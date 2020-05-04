@@ -87,13 +87,3 @@ if __name__ == '__main__':
         logging.info('[VAL] loss: {:.3f}, roc_auc: {:.3f}, ap_macro: {:.3f}, ap_micro: {:.3f}'.format(val_loss, d['roc_auc_val'], d['ap_macro_val'], d['ap_micro_val']))
         logging.info('[TIME] {:.3f} sec'.format(time.time() - s))
         logging.info('-------------------------------------------------------')
-
-
-
-
-    
-
-
-
-
-

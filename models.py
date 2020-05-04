@@ -88,6 +88,7 @@ class AuxillaryDecoder(nn.Module):
 
 class DualStageAttention(nn.Module):
     def __init__(self, seq_len, freq_bins):
+        super(DualStageAttention, self).__init__()
         self.fc_mel_prob = nn.Linear(freq_bins, freq_bins)
         self.fc_mel_att = nn.Linear(freq_bins, freq_bins)  
 
