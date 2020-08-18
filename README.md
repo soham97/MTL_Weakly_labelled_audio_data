@@ -1,4 +1,4 @@
-### Multi-Task Learning for Interpretable Weakly Labelled Sound Event Detection (PyTorch implementation)
+## Multi-Task Learning for Interpretable Weakly Labelled Sound Event Detection (PyTorch implementation)
 Paper link: https://arxiv.org/abs/2008.07085
 
 ## Dataset
