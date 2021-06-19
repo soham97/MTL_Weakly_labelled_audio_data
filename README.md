@@ -1,5 +1,5 @@
 ## Multi-Task Learning for Interpretable Weakly Labelled Sound Event Detection (PyTorch implementation)
-Graduate project report (full-paper): https://arxiv.org/pdf/2008.07085.pdf
+Graduate project report (full-manuscript): https://arxiv.org/pdf/2008.07085.pdf
 
 A follow up short paper (INTERSPEECH 21) of this work: <b>"Improving weakly supervised sound event detection with self-supervised auxiliary tasks"</b> here: https://arxiv.org/pdf/2106.06858.pdf
 
