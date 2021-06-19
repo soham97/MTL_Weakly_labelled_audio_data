@@ -1,7 +1,7 @@
 ## Multi-Task Learning for Interpretable Weakly Labelled Sound Event Detection (PyTorch implementation)
 Graduate project report (full-paper): https://arxiv.org/pdf/2008.07085.pdf
 
-A follow up short paper (INTERSPEECH 21) of the work: <b>"Improving weakly supervised sound event detection with self-supervised auxiliary tasks"</b> here: https://arxiv.org/pdf/2106.06858.pdf
+A follow up short paper (INTERSPEECH 21) of this work: <b>"Improving weakly supervised sound event detection with self-supervised auxiliary tasks"</b> here: https://arxiv.org/pdf/2106.06858.pdf
 
 ## Dataset
 The dataset is made by mixing [DCASE 2019 Task 1](http://dcase.community/challenge2019/task-acoustic-scene-classification) of Acoustic scene classificaion and [DCASE 2018 Task 2](http://dcase.community/challenge2018/task-general-purpose-audio-tagging) of General purpose Audio tagging. The sound events are mixed with background sounds to form 10 seconds audio clips. Each audio clip consists of 3 sound events. Only the weakly labelled data is used for training.
