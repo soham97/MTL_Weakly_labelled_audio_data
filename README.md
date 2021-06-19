@@ -56,6 +56,15 @@ Check the paper out for full result comparison and ablation study
 ```
 
 ## Citation
+@misc{deshmukh2021improving,
+      title={Improving weakly supervised sound event detection with self-supervised auxiliary tasks}, 
+      author={Soham Deshmukh and Bhiksha Raj and Rita Singh},
+      year={2021},
+      eprint={2106.06858},
+      archivePrefix={arXiv},
+      primaryClass={eess.AS}
+}
+
 @misc{deshmukh2020multitask,
     title={Multi-Task Learning for Interpretable Weakly Labelled Sound Event Detection},
     author={Soham Deshmukh and Bhiksha Raj and Rita Singh},
