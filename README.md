@@ -58,23 +58,24 @@ Check the paper out for full result comparison and ablation study
 ```
 
 ## Citation
-@misc{deshmukh2021improving,
-      title={Improving weakly supervised sound event detection with self-supervised auxiliary tasks}, 
-      author={Soham Deshmukh and Bhiksha Raj and Rita Singh},
-      year={2021},
-      eprint={2106.06858},
-      archivePrefix={arXiv},
-      primaryClass={eess.AS}
+```
+@inproceedings{deshmukh21_interspeech,
+  author={Soham Deshmukh and Bhiksha Raj and Rita Singh},
+  title={{Improving Weakly Supervised Sound Event Detection with Self-Supervised Auxiliary Tasks}},
+  year=2021,
+  booktitle={Proc. Interspeech 2021},
+  pages={596--600},
+  doi={10.21437/Interspeech.2021-2079}
 }
-
-@misc{deshmukh2020multitask,
-    title={Multi-Task Learning for Interpretable Weakly Labelled Sound Event Detection},
-    author={Soham Deshmukh and Bhiksha Raj and Rita Singh},
-    year={2020},
-    eprint={2008.07085},
-    archivePrefix={arXiv},
-    primaryClass={eess.AS}
+```
+```
+@article{deshmukh2020multi,
+  title={Multi-task learning for interpretable weakly labelled sound event detection},
+  author={Deshmukh, Soham and Raj, Bhiksha and Singh, Rita},
+  journal={arXiv preprint arXiv:2008.07085},
+  year={2020}
 }
+```
 
 ## External Links
 The base code and dataset mixing is from sed_time_freq_segmentation by Qiuqiang Kong https://github.com/qiuqiangkong/sed_time_freq_segmentation
